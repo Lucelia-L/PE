@@ -12,9 +12,9 @@
     <form id="form1" runat="server">
     <div>
         <div class="nav-menu">
-                    <a href="index.html" class="nav-link">Home</a>
-                    <a href="#" class="nav-link">Tags</a>
-                    <a href="archives.html" class="nav-link">Archives</a>
+                    <a href="index.html" class="nav-link">首页</a>
+                    <a href="#" class="nav-link">赛事</a>
+        
                     <a href="about.html" class="nav-link">About</a>
                 </div>
 
