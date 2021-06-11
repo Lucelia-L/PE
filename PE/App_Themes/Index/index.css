@@ -1,0 +1,21 @@
+﻿body {
+}
+.nav-menu{
+    background-color:black;
+}
+.nav-menu a:hover {
+    color: darkred;
+    cursor: pointer;
+}
+
+.nav-menu a:visited {
+    text-decoration: none;
+}
+
+.nav-menu a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 0 20px;
+    color: white;
+}
