@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+	<Ad>
+		<ImageUrl>img/baidu.jpg</ImageUrl>
+		<NavigateUrl>http://baike.baidu.com</NavigateUrl>
+		<AlternateText>百度</AlternateText>
+		<Impressions>20</Impressions>
+		<Keyword>baidu</Keyword>
+	</Ad>
+	<Ad>
+		<ImageUrl>img/tmall.jpg</ImageUrl>
+		<NavigateUrl>https://pages.tmall.com/</NavigateUrl>
+		<AlternateText>天猫</AlternateText>
+		<Impressions>30</Impressions>
+		<Keyword>tmall</Keyword>
+	</Ad>
+</Advertisements>
