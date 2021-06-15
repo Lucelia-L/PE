@@ -1,8 +1,22 @@
 ﻿body {
+    background-color: #f5f5f5;
 }
-
+.main {
+    
+}
+.main-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: url('indexbg.jpg');
+}
 .ad {
-    background-color: blanchedalmond;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top:20px;
 }
 
 * {
@@ -15,6 +29,52 @@ li {
     float: left;
 }
 
+.carousel-main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin:20px 0px 20px 0px;
+}
+
+.carousel {
+    width: 900px;
+    height: 500px;
+    overflow: hidden;
+ 
+
+}
+
+    .carousel img {
+        width: 900px;
+        height: 500px;
+    }
+
+    .carousel ul li {
+        list-style-type: none;
+    }
+
+.textList {
+    width: 300px;
+    background-color: black;
+}
+
+    .textList ul li {
+        list-style-type: none;
+        width: 300px;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+        color:white;
+    }
+
+    .textList ul .bg {
+        background:url('textbg.png');
+    }
+
+
+
 #tabCon_1 {
     display: none;
 }
@@ -22,20 +82,42 @@ li {
 #tabCon_2 {
     display: none;
 }
+#tabCon_3 {
+    display: none;
+}
+.tabs {
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px;
+}
+.tabContainer {
+    width: 1200px;
+}
 .tab {
     height: 80px;
-    width: 60%;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: #666666;
     display: flex;
 }
-
+.tabContainer ul li {
+    list-style-type: none;
+}
+.tabContainer ul .bg {
+    background-color: #bc0000;
+    color: white;
+    font-weight: bold;
+}
 .tab-item {
-    margin-left: 30px;
+
     font-size: 20px;
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
+
+
+
