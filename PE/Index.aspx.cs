@@ -17,6 +17,19 @@ namespace PE
         {
 
         }
-        
+
+        protected void DataList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Response.Write("sssssss");
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            int article_id = Int32.Parse(btn.CommandArgument);
+
+            string address = "Detail.aspx?article_id=" + article_id;
+            Response.Redirect(address);
+        }
     }
 }

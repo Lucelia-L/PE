@@ -63,7 +63,7 @@
                 </ul>
                 <div class="tabCon">
                     <div id="tabCon_0">
-                        <asp:DataList ID="DataList1" runat="server" CellPadding="4" DataKeyField="article_id" DataSourceID="SqlDataSource1" ForeColor="#333333">
+                        <asp:DataList ID="DataList1" runat="server" CellPadding="4" DataKeyField="article_id" DataSourceID="SqlDataSource1" ForeColor="#333333" OnSelectedIndexChanged="DataList1_SelectedIndexChanged">
                             <AlternatingItemStyle BackColor="White" />
                             <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
                             <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
@@ -77,6 +77,7 @@
                                 <br />
                                 content:
                                 <asp:Label ID="contentLabel" runat="server" Text='<%# Eval("content") %>' />
+                                <asp:Button ID="Button1" runat="server" Text="查看详情" CommandArgument='<%#Eval("article_id")%>'  OnClick="Button1_Click"  />
                                 <br />
                                 <br />
                             </ItemTemplate>
@@ -129,7 +130,7 @@
                         <asp:DataList ID="DataList4" runat="server" DataKeyField="article_id" DataSourceID="SqlDataSource4">
                             <ItemTemplate>
                                 article_id:
-                                <asp:Label ID="article_idLabel" runat="server" Text='<%# Eval("article_id") %>' />
+                                <asp:Label ID="article_idLabel" runat="server" Text='<%# Eval("article_id") %>'  />
                                 <br />
                                 title:
                                 <asp:Label ID="titleLabel" runat="server" Text='<%# Eval("title") %>' />

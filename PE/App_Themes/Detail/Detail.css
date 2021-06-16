@@ -1,0 +1,43 @@
+﻿.detail-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.article {
+    display: flex;
+    flex-wrap:wrap;
+    width: 1200px;
+    background-color: aliceblue;
+    margin: 50px 50px 0px 50px;
+}
+.title {
+    font-size: 48px;
+    font-weight: bold;
+    margin:50px 0px 50px 0px;
+}
+.content {
+    font-size: 24px;
+}
+.comment-send {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1200px;
+    margin: 50px 50px 0px 50px;
+}
+.comment-textarea {
+    border: 2px #e6e6e6 solid;
+}
+.commentBtn {
+    background-color: #bc0000;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: none;
+}
