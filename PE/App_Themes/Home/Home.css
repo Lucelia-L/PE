@@ -1,0 +1,90 @@
+﻿body {
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.home-main-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-main {
+    width: 1200px;
+
+    display: flex;
+    margin-top: 50px;
+
+}
+
+.tabs {
+    width: 20%;
+
+}
+
+.container {
+    width: 80%;
+    padding-left:50px;
+}
+
+#tabCon_0 {
+    display: none;
+}
+
+#tabCon_1 {
+    display: none;
+}
+
+.tabs ul  .bg {
+    background-color: #bc0000;
+    color: white;
+}
+
+li {
+    height: 70px;
+    list-style: none;
+    background-color: #EDEFF0;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2C3F4C;
+}
+.tab-title {
+    color: #2C3F4C;
+    font-size:28px;
+    font-weight:bold;
+    margin-bottom:40px;
+}
+
+.tab-main {
+    padding: 20px 20px 20px 20px;
+    background-color: #EDEFF0;
+}
+
+.comment-item {
+    height: 100px;
+    padding: 10px 20px 10px 20px;
+    border: 2px #e6e6e6 solid;
+    background-color:white;
+}
+
+.comment-title {
+    margin-bottom: 10px;
+}
+
+.comment-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.comment-time {
+    font-size: 20px;
+    font-weight: 500;
+    color: #a1a1a1;
+}

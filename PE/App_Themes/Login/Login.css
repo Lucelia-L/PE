@@ -1,0 +1,95 @@
+﻿body {
+    background-image: url('bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login-main-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-main {
+    background-color: whitesmoke;
+    width: 1100px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    border-radius: 10px;
+}
+
+.login-main-all {
+}
+
+.login-main-left {
+    background-image: url('bg2.jpg');
+    background-size: 100% 100%;
+    background-repeat: repeat-x;
+    width: 50%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.login-main-right {
+    width: 50%;
+    height: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-centent {
+    width: 300px;
+    height: 100%;
+}
+
+.form-tile {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom:100px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-main {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.form-main-item {
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.loginBtn-div {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.loginBtn {
+    width: 170px;
+    height: 50px;
+    background-color: #bc0000;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.gotoRegister-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}

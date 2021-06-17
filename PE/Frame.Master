@@ -11,37 +11,58 @@
         body {
         }
 
-        .nav-menu-main {
+        .main-box {
             display: flex;
+            background-color: black;
             justify-content: center;
             align-items: center;
+        }
+
+        .nav-menu-main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             background-color: black;
+            width: 1200px;
+            font-size: 36px;
+            font-weight: bold;
+            height: 70px;
         }
 
         .nav-menu {
-            background-color: black;
-            height: 70px;
-            font-size: 36px;
-            font-weight: bold;
-            width: 1200px;
+            display: flex;
+            align-items: center;
         }
 
-            .nav-menu a:hover {
-                color: #bc0000;
-                cursor: pointer;
-            }
+        .home {
+            display: flex;
+            align-items: center;
+        }
 
-            .nav-menu a:visited {
-                text-decoration: none;
-            }
+        .nav-menu-main a:hover {
+            color: #bc0000;
+            cursor: pointer;
+        }
 
-            .nav-menu a {
-                display: inline-block;
-                text-decoration: none;
-                font-size: 16px;
-                padding: 0 20px;
-                color: white;
-            }
+        .nav-menu-main a:visited {
+            text-decoration: none;
+        }
+
+        .nav-menu-main a {
+            display: inline-block;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 0 20px;
+            color: white;
+        }
+
+        .home a {
+            display: inline-block;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 0 20px;
+            color: white;
+        }
     </style>
 
     <asp:ContentPlaceHolder ID="head" runat="server">
@@ -49,10 +70,19 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div class="nav-menu-main">
-            <div class="nav-menu">
-                <a class="nav-link" href="index.html">首页</a> <a class="nav-link" href="#">赛事</a> <a class="nav-link" href="about.html">关于</a>
+        <div class="main-box">
 
+
+            <div class="nav-menu-main">
+                <div class="nav-menu">
+                    <a class="nav-link" href="Index.aspx">首页</a> <a class="nav-link" href="Game.aspx">赛事</a> <a class="nav-link" href="About.aspx">关于</a>
+
+                </div>
+                <div class="home">
+                    <a href="Register.aspx">注册</a>
+                    <a href="Login.aspx">登录</a>
+                    <a href="Home.aspx">我的</a>
+                </div>
             </div>
         </div>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

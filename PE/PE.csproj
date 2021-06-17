@@ -74,8 +74,18 @@
     <Content Include="About.aspx" />
     <Content Include="AdRotator.xml" />
     <Content Include="App_Themes\Detail\Detail.css" />
+    <Content Include="App_Themes\Game\Game.css" />
+    <Content Include="App_Themes\Game\indexbg.jpg" />
+    <Content Include="App_Themes\Game\textbg.png" />
+    <Content Include="App_Themes\Home\Home.css" />
     <Content Include="App_Themes\Index\index.css" />
     <Content Include="App_Themes\Index\indexbg.jpg" />
+    <Content Include="App_Themes\Login\bg1.jpg" />
+    <Content Include="App_Themes\Login\bg2.jpg" />
+    <Content Include="App_Themes\Login\Login.css" />
+    <Content Include="App_Themes\Register\bg2.jpg" />
+    <Content Include="App_Themes\Register\bg1.jpg" />
+    <Content Include="App_Themes\Register\Register.css" />
     <Content Include="bin\AspNet.ScriptManager.jQuery.dll" />
     <Content Include="Detail.aspx" />
     <Content Include="Game.aspx" />
@@ -102,7 +112,7 @@
     <Compile Include="About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
-    <Content Include="App_Code\Article.cs" />
+    <Content Include="App_Code\Comment.cs" />
     <Compile Include="Detail.aspx.cs">
       <DependentUpon>Detail.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

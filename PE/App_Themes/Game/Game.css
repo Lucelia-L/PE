@@ -1,0 +1,63 @@
+﻿body {
+    background-image:url("indexbg.jpg");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.game-main-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-main {
+    width: 1200px;
+    display: flex;
+    margin-top: 50px;
+}
+
+.tabs {
+    width: 20%;
+}
+
+.container {
+    width: 80%;
+    padding-left: 50px;
+}
+
+#tabCon_0 {
+    display: none;
+}
+
+#tabCon_1 {
+    display: none;
+}
+
+.tabs ul .bg {
+    background-image:url("textbg.png");
+    color: white;
+}
+
+li {
+    height: 70px;
+    list-style: none;
+    background-color: #1a1a1d;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+
+.tab-main {
+    padding: 20px 20px 20px 20px;
+    background-color: #EDEFF0;
+}
+
+

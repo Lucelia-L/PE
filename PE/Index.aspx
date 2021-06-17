@@ -56,10 +56,10 @@
         <div class="tabs">
             <div class="tabContainer">
                 <ul class="tab">
-                    <li class="tab-item" onclick="changeTab('0')">热门</li>
-                    <li class="tab-item" onclick="changeTab('1')">篮球</li>
-                    <li class="tab-item" onclick="changeTab('2')">足球</li>
-                    <li class="tab-item" onclick="changeTab('3')">田径</li>
+                    <li class="tab-item" >热门</li>
+                    <li class="tab-item" >篮球</li>
+                    <li class="tab-item" >足球</li>
+                    <li class="tab-item" >田径</li>
                 </ul>
                 <div class="tabCon">
                     <div id="tabCon_0">
@@ -77,16 +77,16 @@
                                 <br />
                                 content:
                                 <asp:Label ID="contentLabel" runat="server" Text='<%# Eval("content") %>' />
-                                <asp:Button ID="Button1" runat="server" Text="查看详情" CommandArgument='<%#Eval("article_id")%>'  OnClick="Button1_Click"  />
+                                <asp:Button ID="Button1" runat="server" Text="查看详情" CommandArgument='<%#Eval("article_id")%>' OnClick="Button1_Click" />
                                 <br />
                                 <br />
                             </ItemTemplate>
                             <SelectedItemStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
                         </asp:DataList>
-                        
+
                     </div>
                     <div id="tabCon_1">
-                        
+
                         <asp:DataList ID="DataList2" runat="server" DataKeyField="article_id" DataSourceID="SqlDataSource2">
                             <ItemTemplate>
                                 article_id:
@@ -101,7 +101,7 @@
                                 type:
                                 <asp:Label ID="typeLabel" runat="server" Text='<%# Eval("type") %>' />
                                 <br />
-<br />
+                                <br />
                             </ItemTemplate>
                         </asp:DataList>
 
@@ -121,7 +121,7 @@
                                 type:
                                 <asp:Label ID="typeLabel" runat="server" Text='<%# Eval("type") %>' />
                                 <br />
-<br />
+                                <br />
                             </ItemTemplate>
                         </asp:DataList>
 
@@ -130,7 +130,7 @@
                         <asp:DataList ID="DataList4" runat="server" DataKeyField="article_id" DataSourceID="SqlDataSource4">
                             <ItemTemplate>
                                 article_id:
-                                <asp:Label ID="article_idLabel" runat="server" Text='<%# Eval("article_id") %>'  />
+                                <asp:Label ID="article_idLabel" runat="server" Text='<%# Eval("article_id") %>' />
                                 <br />
                                 title:
                                 <asp:Label ID="titleLabel" runat="server" Text='<%# Eval("title") %>' />
@@ -141,7 +141,7 @@
                                 type:
                                 <asp:Label ID="typeLabel" runat="server" Text='<%# Eval("type") %>' />
                                 <br />
-<br />
+                                <br />
                             </ItemTemplate>
                         </asp:DataList>
 
@@ -152,7 +152,7 @@
         </div>
 
     </div>
-        <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script>
         //tab背景与切换
         $(".tabContainer ul li").hover(function () {
@@ -189,7 +189,7 @@
             if (i > 4) {
                 i = 0;
             }
-           // console.log(new Date());
+            // console.log(new Date());
             $(".carousel ul li").eq(i).fadeIn(100).siblings().fadeOut(100);
             $(".textList ul li").eq(i).addClass("bg").siblings().removeClass("bg");
         }
