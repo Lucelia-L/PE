@@ -41,7 +41,8 @@ create table comment
         foreign key (user_id) references user (user_id)
 );
 ```
-
+## Database Config
+需要在Web.config中配置数据库
 ## 页面效果
 
 ![](https://github.com/Lucelia-L/PE/blob/main/ScreenShots/1.png)
