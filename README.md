@@ -5,9 +5,9 @@ Asp.net小Demo
 
 ## 页面效果
 
-![]("ScreenShots/1.png")
-![]("ScreenShots/2.png")
-![]("ScreenShots/3.png")
-![]("ScreenShots/4.png")
-![]("ScreenShots/5.png")
-![]("ScreenShots/6.png")
+![]("https://github.com/Lucelia-L/PE/blob/main/ScreenShots/1.png")
+![]("https://github.com/Lucelia-L/PE/blob/main/ScreenShots/2.png")
+![]("https://github.com/Lucelia-L/PE/blob/main/ScreenShots/3.png")
+![]("https://github.com/Lucelia-L/PE/blob/main/ScreenShots/4.png")
+![]("https://github.com/Lucelia-L/PE/blob/main/ScreenShots/5.png")
+![]("https://github.com/Lucelia-L/PE/blob/main/ScreenShots/6.png")
