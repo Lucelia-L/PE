@@ -86,11 +86,11 @@ li {
     display: none;
 }
 .tabs {
-
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top:20px;
+    flex-wrap:wrap;
 }
 .tabContainer {
     width: 1200px;
@@ -120,4 +120,12 @@ li {
 }
 
 
+.myright {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px #EDEFF0 solid;
+    margin-top: 50px;
 
+}

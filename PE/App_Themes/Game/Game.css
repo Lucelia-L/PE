@@ -11,6 +11,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap:wrap;
 }
 
 .game-main {
@@ -36,6 +37,10 @@
     display: none;
 }
 
+#tabCon_2 {
+    display: none;
+}
+
 .tabs ul .bg {
     background-image:url("textbg.png");
     color: white;
@@ -55,9 +60,29 @@ li {
 
 
 
-.tab-main {
+.tab-item {
     padding: 20px 20px 20px 20px;
-    background-color: #EDEFF0;
+    background-color: #1a1a1d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+    border:1px black solid;
+}
+.tab-item-left{
+    display:flex;
+    align-items:center;
+}
+.tab-item-left-element{
+    margin-right:10px;
 }
 
-
+.myright {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px #EDEFF0 solid;
+    margin-top: 50px;
+    color:white;
+}

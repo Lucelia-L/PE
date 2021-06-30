@@ -8,6 +8,7 @@
     justify-content: center;
     align-items: center;
     height:100vh;
+    flex-wrap:wrap;
 }
 .register-main {
     background-color: whitesmoke;
@@ -19,9 +20,7 @@
     flex-wrap: nowrap;
     border-radius: 10px;
 }
-.register-main-all {
 
-}
 .register-main-left {
     background-image: url('bg2.jpg');
     background-size: 100% 100%;
@@ -84,4 +83,11 @@
     justify-content: center;
     margin-top:10px;
 }
-
+.myright {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px #EDEFF0 solid;
+ 
+}

@@ -4,13 +4,11 @@
 
 <html>
 <head runat="server">
-
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
     <style>
         body {
         }
-
         .main-box {
             display: flex;
             background-color: black;
@@ -71,12 +69,9 @@
 <body>
     <form id="form1" runat="server">
         <div class="main-box">
-
-
             <div class="nav-menu-main">
                 <div class="nav-menu">
                     <a class="nav-link" href="Index.aspx">首页</a> <a class="nav-link" href="Game.aspx">赛事</a> <a class="nav-link" href="About.aspx">关于</a>
-
                 </div>
                 <div class="home">
                     <a href="Register.aspx">注册</a>

@@ -73,6 +73,7 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="AdRotator.xml" />
+    <Content Include="App_Themes\About\About.css" />
     <Content Include="App_Themes\Detail\Detail.css" />
     <Content Include="App_Themes\Game\Game.css" />
     <Content Include="App_Themes\Game\indexbg.jpg" />

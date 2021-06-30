@@ -19,15 +19,8 @@ namespace PE
 
         protected void LoginUser(object sender, EventArgs e)
         {
-           
-  
-            Debug.WriteLine("开始连接");
-
             string connstr = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
-            Debug.WriteLine(connstr);
-
             OdbcConnection conn = new OdbcConnection(connstr);
-
             string name = tb_username.Text;
             string passwd_client = tb_password.Text;
             string passwd_serve = null;
@@ -35,48 +28,32 @@ namespace PE
             string sex = null;
             int user_id = 0;
             bool flag = false;
-           
-            
-            Debug.WriteLine("获取数据");
+
             try
             {
                 conn.Open();
                 string sql = "select * from user where name ='" + name + "'";
-                Debug.WriteLine(sql);
                 OdbcCommand cmd = new OdbcCommand(sql, conn);
                 OdbcDataReader rdr = cmd.ExecuteReader();
-             
                 while (rdr.Read())
                 {
                     flag = true;
-                    // Response.Write(rdr[1]);
-                    // Response.Write(rdr[2]);
                     user_id = (int)rdr[0];
                     passwd_serve = (string)rdr[2];
                     age = (int)rdr[3];
                     sex = (string)rdr[4];
-          
                 }
-                rdr.Close();
-                
+                rdr.Close();      
             }
             catch (Exception ex)
             {
                 Debug.WriteLine(ex.ToString());
-                Response.Write(ex.ToString());
             }
             conn.Close();
-            Debug.WriteLine("结束连接");
-
             if (!flag)
             {
-                Debug.WriteLine("没有数据");
                 Server.Transfer("Login.aspx");
             }
-            Debug.WriteLine(passwd_serve);
-            Debug.WriteLine(age);
-            Debug.WriteLine(sex);
-
             if (passwd_client.Equals(passwd_serve))
             {
                 Session.Add("age", age);
@@ -84,14 +61,11 @@ namespace PE
                 Session.Add("username", name);
                 Session.Add("user_id", user_id);
                 Server.Transfer("Index.aspx");
-
             }
             else
             {
                 Server.Transfer("Login.aspx");
             }
-            
-
         }
     }
 }
